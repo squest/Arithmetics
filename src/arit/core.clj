@@ -79,6 +79,75 @@
       (println "Jawaban : " (if (= c +) (+ a b) (- a b)))
       (Thread/sleep ts))))
 
+(defn lat8
+  "Latihan a * b yang angkanya cupu"
+  [n ts]
+  (dotimes [i n]
+    (let [a (rand-nth (range 1 10))
+          b (rand-nth (range 1 10))]
+      (println "Berapa " a "*" b)
+      (Thread/sleep ts)
+      (println "Jawaban : " (* a b))
+      (Thread/sleep ts))))
+
+(defn lat9
+  "Latihan a * 5"
+  [n ts]
+  (println "Trick bagi 2 kali 10")
+  (dotimes [i n]
+    (let [a (rand-nth (range 10 100 2))]
+      (println "Berapa " a "*" 5)
+      (Thread/sleep ts)
+      (println "Jawaban : " (* a 5))
+      (Thread/sleep ts))))
+
+(defn lat10
+  "Latihan a * 2 atau a * 3 atau a * 5"
+  [n ts]
+  (dotimes [i n]
+    (let [a (rand-nth (range 10 100 2))
+          b (rand-nth [2 5])]
+      (println "Berapa " a "*" b)
+      (Thread/sleep ts)
+      (println "Jawaban : " (* a b))
+      (Thread/sleep ts))))
+
+(defn lat11
+  "Latihan a * 5 atau a * 25 atau a * 50"
+  [n ts]
+  (dotimes [i n]
+    (let [a (rand-nth (range 12 30 4))
+          b (rand-nth [5 25 50])]
+      (println "Berapa " a "*" b)
+      (Thread/sleep ts)
+      (println "Jawaban : " (* a b))
+      (Thread/sleep ts))))
+
+(defn lat12
+  "Latihan a * 5 atau a * 25 atau a * 50"
+  [n ts]
+  (dotimes [i n]
+    (let [a (rand-nth (range 19 100 10))
+          b (rand-nth [2 3])]
+      (println "Berapa " a "*" b)
+      (Thread/sleep ts)
+      (println "Jawaban : " (* a b))
+      (Thread/sleep ts))))
+
+(defn lat13
+  "Latihan a * 5 atau a * 25 atau a * 50"
+  [n ts]
+  (dotimes [i n]
+    (let [a (rand-nth (concat (range 19 100 10) (range 18 100 10)))
+          b (rand-nth [2 3])]
+      (println "Berapa " a "*" b)
+      (Thread/sleep ts)
+      (println "Jawaban : " (* a b))
+      (Thread/sleep ts))))
+
+
+
+
 
 
 
